@@ -1,0 +1,73 @@
+.header {
+  padding: 16px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    display: flex;
+    margin-right: auto;
+  }
+
+  &__logo-image {
+    width: 157px;
+    height: 68px;
+
+    @include vp-767 {
+      width: 98px;
+      height: 42px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin: 0 24px 0 0;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    column-gap: 15px;
+    padding: 5px;
+
+    @include vp-1023 {
+      margin: 0;
+      border: none;
+      padding: 0;
+    }
+
+    @include vp-1023 {
+      & a:first-child {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    width: 128px;
+  }
+
+  &__language-link {
+    outline: none;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 12px;
+    padding: 17px 22px 17px 21px;
+    min-height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $color-black-russian;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  &__language-icon {
+    display: flex;
+    align-items: center;
+  }
+}
