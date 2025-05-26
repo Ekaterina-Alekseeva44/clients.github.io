@@ -52,6 +52,9 @@
     margin: 0 0 20px 0;
     background-color: $color-white-smoke-1;
     border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @include vp-1023 {
       margin: 0 0 15px 0;
